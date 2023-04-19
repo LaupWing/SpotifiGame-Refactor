@@ -1,8 +1,9 @@
+import type { Express, Request, Response } from "express"
 import express from "express"
 import router from "./router"
 import "dotenv/config"
 
-const app = express()
+const app: Express = express()
 const port = process.env.PORT || 3000
 
 app
